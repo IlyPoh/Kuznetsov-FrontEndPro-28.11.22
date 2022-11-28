@@ -86,13 +86,6 @@ const multiArrays = function () {
 
 // 4. Removing symbols
 
-function symbolRemoving(string, rule) {
-    let symbol = rule.join("");
-    return string.replace(new RegExp(`[${symbol}]`, "gi"), "");
-}
-console.log(symbolRemoving("hello world", ['l', 'd']))
-
-
 const symbolRemoving = (textToRemove, symbolToRemove) => {
 
     let result = textToRemove
