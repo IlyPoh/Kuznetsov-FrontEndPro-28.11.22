@@ -107,3 +107,26 @@ const symbolRemoving = (textToRemove, symbolToRemove) => {
     
 }
 console.log(symbolRemoving("hello world", ['l', 'd']))
+
+
+
+// 5. Degree
+
+let currentDegree = 1
+const pow = function(number, degree) {
+    if (number === 0) {
+        return 0
+    }
+    if (degree === 1) {
+        return number
+    }
+
+    if (degree > 0) {
+        return number * pow(number, degree - 1)
+    } else if (degree < 0) {
+        return 1/(number * pow(number, -degree - 1))
+    }
+}
+
+console.log(`With positive degree: ${pow(4, 5)}`)
+console.log(`With negative degree: ${pow(4, -3)}`)
