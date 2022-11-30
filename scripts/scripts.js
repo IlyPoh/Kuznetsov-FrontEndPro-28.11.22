@@ -112,7 +112,6 @@ console.log(symbolRemoving("hello world", ['l', 'd']))
 
 // 5. Degree
 
-let currentDegree = 1
 const pow = function(number, degree) {
     if (number === 0) {
         return 0
